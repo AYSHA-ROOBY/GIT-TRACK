@@ -1,0 +1,1 @@
+let resul=3*4
