@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./movie.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+    <div class="bg">
+        <nav class="navbar bg-body-secondary d-flex">
+    <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="https://plus.unsplash.com/premium_photo-1710409625244-e9ed7e98f67b?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8bW92aWV8ZW58MHx8MHx8fDA%3D"alt="Logo" width="120" height="84" class="d-inline-block align-text-top">
+      Check it and Watch it
+
+    </a>
+  </div>
+</nav>
+    <div class="d-flex align-items-center justify-content-center">
+    <div class="d-flex">
+    <input id="input" type="text" placeholder="search"class="form-control" style="width: 300px;">
+    <button class="btn btn-dark">Check</button>
+    </div>
+ </div>
+ <div id="output"></div>
+        
+
+    </div>
+</body>
+<script>
+    let async search=()=>{
+    const movie=document.getElementById('input').value
+    const display=document.getElementById('output')
+    if(movie){
+     let result=await.fetch(`https://www.omdbapi.com/?i=tt3896198&apikey=8d623f1b`)
+     let res=result.JASON();
+    let moviedetails=res[0]
+     if(result==404){
+        alert("not found")
+     }
+     else{
+
+        <div>
+            title:${moviedetails.title}
+            director:4{moviedetails.title}
+            writ
+        </div>
+     }
+    }
+
+
+}
+    
+    
+
+</script>
+</html>
