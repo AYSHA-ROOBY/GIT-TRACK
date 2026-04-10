@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./cal.css">
+</head>
+<body>
+    <div class="bg">
+    <div class="main">
+        <div class="input p-3">
+            <input id="output" type="text" placeholder="0" class="form-control ">
+        </div>
+         <div class="button">
+            <div class="row">
+                <div class="but" onclick="clearall()">AC</div>
+                <div class="but" onclick="back()">C</div>
+                <div class="but"  onclick="dataenter('%')">%</div>
+                <div class="but" onclick="dataenter('/')">/</div>
+            </div>
+            <div class="row">
+                <div class="but" onclick="dataenter(9)">9</div>
+                <div class="but" onclick="dataenter(8)">8</div>
+                <div class="but" onclick="dataenter(7)">7</div>
+                <div class="but" onclick="dataenter('×')">×</div>
+            </div>
+            <div class="row">
+                <div class="but" onclick="dataenter(6)">6</div>
+                <div class="but" onclick="dataenter(5)">5</div>
+                <div class="but" onclick="dataenter(4)">4</div>
+                <div class="but" onclick="dataenter('-')">-</div>
+            </div>
+            <div class="row">
+                <div class="but"onclick="dataenter(3)">3</div>
+                <div class="but" onclick="dataenter(2)">2</div>
+                <div class="but" onclick="dataenter(1)">1</div>
+                <div  class="but" onclick="dataenter('+')">+</div>
+            </div>
+             <div class="row">
+                <div class="but" onclick="dataenter(0)">0</div>
+                <div class="but" onclick="dataenter('.')">.</div>
+                <div id="plus" class="but" onclick="result()">=</div>
+                
+            </div>
+        
+        </div>
+
+    
+    
+    
+    
+    
+    
+    
+    </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
